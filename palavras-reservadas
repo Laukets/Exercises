@@ -1,0 +1,5 @@
+and       def       exec      if        not       return
+assert    del       finally   import    or        try
+break     elif      for       in        pass      while
+class     else      from      is        print     yield
+continue  except    global    lambda    raise

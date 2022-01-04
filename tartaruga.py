@@ -1,3 +1,5 @@
+#%%
+
 import turtle
 wn = turtle.Screen()
 tess = turtle.Turtle() # chama o construtor da classe Trutle q retorna um objeto turtle
@@ -36,3 +38,4 @@ for i in range(4):
     alex.left(90)
 
 wn.exitonclick()
+# %%

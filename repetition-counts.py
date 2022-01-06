@@ -77,4 +77,4 @@ def find4(astring, achar, start=0, end=0):
 
 ss = 'Python strings have some interesting methods.'
 
-print(find4(ss, 's', 8, 13))
+print(find4(ss, 's'))

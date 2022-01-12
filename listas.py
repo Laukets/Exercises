@@ -31,5 +31,38 @@ i[0] = 4
 print(i)
 print(lista)'''
 
-j = [num] * 3
+j = [num] * 3 # lista de listas, se modificar a lista num interfere na lista j
 print(j)
+
+listaOrig = [45, 32, 88]
+print(id(listaOrig))
+
+listaOrig = listaOrig + ['gato'] # é necessãrio inserir a str em uma lista para haver a concatenação
+print(listaOrig)
+print(id(listaOrig)) # são diferentes ids se usamos concatenação
+
+
+# METHODS
+
+num.append('banana') # add item (o id é o mesmo se usarmos o append)
+print(num) 
+
+print(num.count(17))
+
+print(num.index(44))
+
+num.insert(4,5354) # add item no indice indicado em remover item algum
+print(num)
+
+print(num.pop()) # remove ultimo item da lista
+
+print(num.pop(9)) # remove item do indice indicado e o retorna
+
+num.remove([])
+print(num) 
+
+num.reverse() # inverte ordem dos itens
+print(num)
+
+num.clear() # remove todos os itens da lista
+print(num)

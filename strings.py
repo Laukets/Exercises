@@ -1,52 +1,61 @@
 s = " hello world!"
 
-su = s.upper() # torna os caracteres maiúsculos
-print(f'upper: {su}')
-
-sl = s.lower() # torna os caracteres minúsculos
-print(f'lower: {sl}')
-
 sc = s.capitalize() # torna o 1° caracter maiúsculo e os outros minúsculos
 print(f'capitalize: {sc}')
-
-ss = s.strip() # remove os espaços no começo e no fim
-print(f'strip: {ss}')
-
-sls = s.lstrip() # remove espaços no inicio da string
-print(f'lstrip: {sls}')
-
-srs = s.rstrip() # remove espaços no fim da string
-print(f'rstrip: {srs}')
-
-sco = s.count('o') # retorna o n° de ocorrencias do item
-print(f'count: {sco}')
-
-sr = s.replace('e','a') # substitui todas as ocorrencias de um caracter por outro
-print(f'replace: {sr}')
 
 sce = s.center(10) # add espaços centralizando a string
 print(f'center: *{sce}*')
 
-slj = s.ljust(10) # add espaços na frente (esquerda) da string
-print(f'ljust: *{slj}*')
+sco = s.count('o') # retorna o n° de ocorrencias do item
+print(f'count: {sco}')
 
-srj = s.rjust(10) # add espaços no fim (direita) da string
-print(f'rjust: *{srj}*')
+senc = s.encode('UTF-8', 'strict') # Return an encoded version of the string as a bytes object. The default for errors is 'strict', meaning that encoding errors raise a UnicodeError.
+print(f'encode: {senc}')
+
+ses = s.endswith('!') # Return True if the string ends with the specified suffix, otherwise return False
+print(f'endswith: {ses}')
+
+set = s.expandtabs(4) # Return a copy of the string where all tab characters are replaced by one or more spaces, depending on the current column and the given tab size
+print(f'.\texpandtabs: {set}\t.')
 
 sf = s.find('l') # retorna o indice da 1° ocorrencia do item (busca no sentido crescente)
 print(f'find: {sf}')
 
-srf = s.rfind('l') # retorna o indice da ultima ocorrencia do item (busca no sentido decrescente)
-print(f'rfind: {srf}')
-
 si = s.index('w') # igual ao find, mas causa erro caso o item nao seja encontrado
 print(f'index: {si}')
+
+slen = len(s) # retorna o n° de caracteres da string
+print(f'len: {slen}')
+
+slj = s.ljust(10) # add espaços na frente (esquerda) da string
+print(f'ljust: *{slj}*')
+
+sl = s.lower() # torna os caracteres minúsculos
+print(f'lower: {sl}')
+
+sls = s.lstrip() # remove espaços no inicio da string
+print(f'lstrip: {sls}')
+
+sr = s.replace('e','a') # substitui todas as ocorrencias de um caracter por outro
+print(f'replace: {sr}')
+
+srf = s.rfind('l') # retorna o indice da ultima ocorrencia do item (busca no sentido decrescente)
+print(f'rfind: {srf}')
 
 sri = s.rindex('w') # igual ao rfind, mas causa erro caso o item nao seja encontrado
 print(f'rindex: {sri}')
 
-slen = len(s) # retorna o n° de caracteres da string
-print(f'len: {slen}')
+srj = s.rjust(10) # add espaços no fim (direita) da string
+print(f'rjust: *{srj}*')
+
+srs = s.rstrip() # remove espaços no fim da string
+print(f'rstrip: {srs}')
+
+ss = s.strip() # remove os espaços no começo e no fim
+print(f'strip: {ss}')
+
+su = s.upper() # torna os caracteres maiúsculos
+print(f'upper: {su}')
 
 last = s[slen-1] 
 print(f'ultimo caracter da string: {last}')

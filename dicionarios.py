@@ -44,3 +44,21 @@ for (k,v) in inventario.items():
 keylist = list(inventario.keys())
 keylist.sort()
 print(keylist)
+
+print('\n')
+
+# apelidos inteferem no dicionario original
+
+opposites = {'up': 'down', 'right': 'left', 'true': 'false'}
+opostos = opposites
+
+print(opostos is opposites)
+
+opostos['right'] = 'left'
+print(opposites['right'])
+
+# mas cópias não modificam a original
+
+acopy = opposites.copy()
+acopy['right'] = 'wrong'
+print(opposites['right'])
